@@ -1,0 +1,1337 @@
+/* line 1, ../sass/partials/_base.scss */
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../sass/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/* line 10, ../sass/partials/_base.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 14, ../sass/partials/_base.scss */
+li {
+  list-style: none;
+}
+
+/* line 18, ../sass/partials/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/partials/_layout.scss */
+.nopadding {
+  padding: 0;
+}
+
+/* line 5, ../sass/partials/_layout.scss */
+.paddingleftnone {
+  padding-left: 0;
+}
+
+/* line 9, ../sass/partials/_layout.scss */
+.paddingrightnone {
+  padding-right: 0;
+}
+
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *  `em` units.
+ */
+/* line 23, ../sass/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 36, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 50, ../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 71, ../sass/partials/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 88, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 98, ../sass/partials/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 110, ../sass/partials/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 120, ../sass/partials/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 132, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 140, ../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 155, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 164, ../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 200, ../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 239, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 247, ../sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 255, ../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 259, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 314, ../sass/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 325, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 336, ../sass/partials/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 344, ../sass/partials/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 353, ../sass/partials/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 362, ../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *  Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+/* line 389, ../sass/partials/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 407, ../sass/partials/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 418, ../sass/partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *  and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *  `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *  Known issue: inner spacing remains in IE 6.
+ */
+/* line 433, ../sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 448, ../sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 457, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 468, ../sass/partials/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *  Known issue: excess padding remains in IE 6.
+ */
+/* line 478, ../sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 494, ../sass/partials/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 504, ../sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 515, ../sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 524, ../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 537, ../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 550, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 559, ../sass/partials/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 570, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 575, ../sass/partials/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 10, ../sass/styles.scss */
+.mainmenu {
+  background-color: #1FA136;
+  padding: 0px 15px;
+}
+/* line 13, ../sass/styles.scss */
+.mainmenu .dininglogo {
+  margin: 0;
+  padding: 0;
+}
+/* line 17, ../sass/styles.scss */
+.mainmenu .topmenu {
+  position: relative;
+}
+/* line 20, ../sass/styles.scss */
+.mainmenu .dininglogo {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+/* line 25, ../sass/styles.scss */
+.mainmenu li {
+  padding: 0 18px;
+}
+/* line 27, ../sass/styles.scss */
+.mainmenu li a {
+  font-family: "Patua One", cursive;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 54px;
+  letter-spacing: .5px;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+}
+/* line 35, ../sass/styles.scss */
+.mainmenu li a:hover {
+  text-decoration: none;
+  color: #FFFF00;
+  border-bottom: 2px solid #FFFF00;
+}
+/* line 41, ../sass/styles.scss */
+.mainmenu li .active {
+  color: #FFFF00;
+  border-bottom: 2px solid #FFFF00;
+}
+/* line 45, ../sass/styles.scss */
+.mainmenu li:last-child {
+  padding-right: 0;
+}
+
+/* line 52, ../sass/styles.scss */
+.indicators {
+  display: block;
+  top: 45%;
+  left: auto;
+  bottom: 0;
+  margin-left: 0;
+  margin-right: 2%;
+}
+/* line 59, ../sass/styles.scss */
+.indicators li {
+  width: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 65, ../sass/styles.scss */
+.indicators .active {
+  background-color: #1FA136;
+}
+
+/* line 71, ../sass/styles.scss */
+.carousel-item img {
+  width: 100%;
+}
+
+/* line 75, ../sass/styles.scss */
+.centerblock {
+  top: 35%;
+}
+/* line 77, ../sass/styles.scss */
+.centerblock .piccaption {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 525px;
+  padding: 23px 52px;
+  margin: 0 auto;
+}
+/* line 82, ../sass/styles.scss */
+.centerblock .piccaption h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+/* line 87, ../sass/styles.scss */
+.centerblock .piccaption h5 .capitalize {
+  color: #1FA136;
+  text-transform: uppercase;
+}
+/* line 94, ../sass/styles.scss */
+.centerblock a:hover {
+  text-decoration: none;
+}
+
+/* line 99, ../sass/styles.scss */
+.mainbtn {
+  background-color: #1FA136;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+  width: 130px;
+  margin-top: 15px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 15px 29px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 114, ../sass/styles.scss */
+.mainbtn:hover {
+  background-color: #1AB736;
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+/* line 125, ../sass/styles.scss */
+.welcome {
+  padding: 50px 0;
+}
+/* line 128, ../sass/styles.scss */
+.welcome .welcomemsg h1 {
+  font-family: "Patua One", cursive;
+  font-size: 24px;
+  color: #1FA136;
+  margin: 0;
+}
+/* line 131, ../sass/styles.scss */
+.welcome .welcomemsg .subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2D2D2D;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+/* line 140, ../sass/styles.scss */
+.welcome .welcomemsg p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #2D2D2D;
+}
+/* line 145, ../sass/styles.scss */
+.welcome .video img {
+  width: 100%;
+}
+
+/* line 152, ../sass/styles.scss */
+.homegallery {
+  padding-bottom: 50px;
+}
+/* line 154, ../sass/styles.scss */
+.homegallery .homegalleryblock {
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  width: 32.66667%;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 18, ../sass/partials/_mixins.scss */
+.homegallery .homegalleryblock:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 161, ../sass/styles.scss */
+.homegallery .homegalleryblock:hover {
+  -moz-box-shadow: 0px 0px 47px -9px #666566;
+  -webkit-box-shadow: 0px 0px 47px -9px #666566;
+  box-shadow: 0px 0px 47px -9px #666566;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 168, ../sass/styles.scss */
+.homegallery .homegalleryblock .homegalleryimg {
+  position: relative;
+}
+/* line 170, ../sass/styles.scss */
+.homegallery .homegalleryblock .homegalleryimg figure {
+  margin: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 176, ../sass/styles.scss */
+.homegallery .homegalleryblock .homegalleryimg figure img {
+  width: 100%;
+}
+/* line 179, ../sass/styles.scss */
+.homegallery .homegalleryblock .homegalleryimg figure:hover {
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+/* line 183, ../sass/styles.scss */
+.homegallery .homegalleryblock .homegalleryimg .homegallerydes {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5px 12px;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+/* line 197, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw {
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  width: 49.5%;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 18, ../sass/partials/_mixins.scss */
+.homegallery .homegalleryblocksdw:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 204, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw:hover {
+  -moz-box-shadow: 0px 0px 47px -9px #666566;
+  -webkit-box-shadow: 0px 0px 47px -9px #666566;
+  box-shadow: 0px 0px 47px -9px #666566;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 211, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw .homegalleryimg {
+  position: relative;
+}
+/* line 213, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw .homegalleryimg figure {
+  margin: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 219, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw .homegalleryimg figure img {
+  width: 100%;
+}
+/* line 222, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw .homegalleryimg figure:hover {
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+/* line 226, ../sass/styles.scss */
+.homegallery .homegalleryblocksdw .homegalleryimg .homegallerydes {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5px 12px;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* line 242, ../sass/styles.scss */
+.parallax {
+  background-image: url("../img/paralleximg.jpg");
+  min-height: 336px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 25px 0;
+}
+/* line 251, ../sass/styles.scss */
+.parallax .banquetinfo .banquetdes {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 45%;
+  padding: 55px 25px 15px 25px;
+}
+/* line 255, ../sass/styles.scss */
+.parallax .banquetinfo .banquetdes h1 {
+  font-family: "Patua One", cursive;
+  font-size: 24px;
+  color: #1FA136;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* line 259, ../sass/styles.scss */
+.parallax .banquetinfo .banquetdes p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #2D2D2D;
+}
+/* line 263, ../sass/styles.scss */
+.parallax .banquetinfo .banquetdes a:hover {
+  text-decoration: none;
+}
+/* line 267, ../sass/styles.scss */
+.parallax .banquetinfo .banquetdes .bookingbtn {
+  background-color: #1FA136;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 120px;
+  margin-top: 15px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 281, ../sass/styles.scss */
+.parallax .banquetinfo .banquetdes .bookingbtn:hover {
+  background-color: #1AB736;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+/* line 294, ../sass/styles.scss */
+.homemenugridblock {
+  padding: 30px 0 45px 0;
+}
+/* line 296, ../sass/styles.scss */
+.homemenugridblock .menugridblock {
+  padding: 15px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 302, ../sass/styles.scss */
+.homemenugridblock .menugridblock:hover {
+  -moz-box-shadow: 0px 0px 47px -9px #666566;
+  -webkit-box-shadow: 0px 0px 47px -9px #666566;
+  box-shadow: 0px 0px 47px -9px #666566;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+/* line 310, ../sass/styles.scss */
+.homemenugridblock .menugridblock a:hover {
+  text-decoraton: none;
+}
+/* line 314, ../sass/styles.scss */
+.homemenugridblock .menugridblock .homemenuimg {
+  position: relative;
+}
+/* line 316, ../sass/styles.scss */
+.homemenugridblock .menugridblock .homemenuimg figure {
+  margin: 0;
+}
+/* line 319, ../sass/styles.scss */
+.homemenugridblock .menugridblock .homemenuimg .menutitle {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+/* line 330, ../sass/styles.scss */
+.homemenugridblock .menugridblock .homemenuimg .menutitle h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 351, ../sass/styles.scss */
+.owl-controls {
+  bottom: -50px;
+}
+
+/* line 354, ../sass/styles.scss */
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background-color: #a6a6a6;
+}
+
+/* line 357, ../sass/styles.scss */
+.owl-carousel .owl-wrapper-outer {
+  max-height: none;
+}
+
+/* line 360, ../sass/styles.scss */
+.testimonials {
+  background-color: #F5F5F5;
+  padding: 40px 0 55px 0;
+}
+/* line 363, ../sass/styles.scss */
+.testimonials .testimonials-slider {
+  margin-bottom: 15px;
+}
+/* line 365, ../sass/styles.scss */
+.testimonials .testimonials-slider .testimonialsblock {
+  background-color: #FFFFFF;
+  padding: 15px 15px 30px  15px;
+  -moz-border-radius: 1%;
+  -webkit-border-radius: 1%;
+  border-radius: 1%;
+}
+/* line 369, ../sass/styles.scss */
+.testimonials .testimonials-slider .testimonialsblock .testimonialsimgblock {
+  width: 105px;
+  height: 105px;
+  margin: 0 auto;
+}
+/* line 373, ../sass/styles.scss */
+.testimonials .testimonials-slider .testimonialsblock .testimonialsimgblock img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 378, ../sass/styles.scss */
+.testimonials .testimonials-slider .testimonialsblock .testimonialstitle h4 {
+  font-family: "Patua One", cursive;
+  font-size: 20px;
+  line-height: 24px;
+  color: #272727;
+  text-align: center;
+}
+/* line 385, ../sass/styles.scss */
+.testimonials .testimonials-slider .testimonialsblock .testimonialstitle p {
+  margin: 15px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #5C5C5C;
+}
+
+/* line 398, ../sass/styles.scss */
+.megafooter {
+  padding: 30px 0;
+}
+/* line 401, ../sass/styles.scss */
+.megafooter .homecontact h1 {
+  font-family: "Patua One", cursive;
+  font-size: 24px;
+  color: #1FA136;
+  margin: 0;
+  margin-bottom: 24px;
+}
+/* line 407, ../sass/styles.scss */
+.megafooter .address p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+/* line 408, ../sass/styles.scss */
+.megafooter .address p i {
+  color: #1FA136;
+  font-size: 13px;
+  margin-right: 15px;
+}
+/* line 418, ../sass/styles.scss */
+.megafooter .megafooterborder {
+  border-right: 1px solid #dadada;
+}
+/* line 423, ../sass/styles.scss */
+.megafooter .socialicons a i {
+  width: 53px;
+  height: 53px;
+  margin-right: 15px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 432, ../sass/styles.scss */
+.megafooter .socialicons a:hover {
+  text-decoration: none;
+}
+/* line 437, ../sass/styles.scss */
+.megafooter .faccircle {
+  background-color: #3b5998;
+  line-height: 52px;
+}
+/* line 441, ../sass/styles.scss */
+.megafooter .twicircle {
+  background-color: #1da1f2;
+  line-height: 52px;
+}
+/* line 445, ../sass/styles.scss */
+.megafooter .instacircle {
+  background-color: #405de6;
+  line-height: 52px;
+}
+/* line 449, ../sass/styles.scss */
+.megafooter .tubecircle {
+  background-color: #cc181e;
+  line-height: 52px;
+}
+
+/* line 457, ../sass/styles.scss */
+.subscribe .form {
+  background-color: #e9e9e9;
+  -moz-border-radius: 2%;
+  -webkit-border-radius: 2%;
+  border-radius: 2%;
+}
+/* line 460, ../sass/styles.scss */
+.subscribe .form input {
+  background-color: #E9E9E9;
+  border: none;
+  color: #5A5A5A;
+  width: 88%;
+  padding: 15px 15px 15px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+/* line 468, ../sass/styles.scss */
+.subscribe .form input:focus {
+  outline: none;
+}
+/* line 472, ../sass/styles.scss */
+.subscribe .form .submitbtn {
+  background-color: #E9E9E9;
+  border: none;
+  width: 9%;
+  height: 45px;
+  padding: 0;
+}
+/* line 478, ../sass/styles.scss */
+.subscribe .form .submitbtn:focus {
+  outline: none;
+}
+/* line 482, ../sass/styles.scss */
+.subscribe .form i {
+  font-size: 13px;
+  color: #1FA136;
+}
+/* line 487, ../sass/styles.scss */
+.subscribe p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #5C5C5C;
+  padding-top: 20px;
+}
+
+/* line 496, ../sass/styles.scss */
+.footer {
+  background-color: #F5F5F5;
+  padding: 35px 0 20px 0;
+}
+/* line 499, ../sass/styles.scss */
+.footer .footermenu {
+  text-align: center;
+}
+/* line 501, ../sass/styles.scss */
+.footer .footermenu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 504, ../sass/styles.scss */
+.footer .footermenu li a {
+  font-family: "Patua One", cursive;
+  font-size: 14px;
+  color: #000000;
+}
+/* line 508, ../sass/styles.scss */
+.footer .footermenu li a:hover {
+  text-decoration: none;
+  color: #1FA136;
+}
+/* line 515, ../sass/styles.scss */
+.footer .footermenu .active {
+  color: #1FA136;
+}
+/* line 519, ../sass/styles.scss */
+.footer .footerline {
+  width: 45%;
+  height: 1px;
+  background-color: #EAEAEA;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* line 527, ../sass/styles.scss */
+.footer .copyright p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #6C6C6C;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+/* line 540, ../sass/styles.scss */
+.sectionHeader h1 {
+  font-family: "Patua One", cursive;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 115px;
+}
+
+/* line 550, ../sass/styles.scss */
+.aboutus {
+  background-image: url("../img/aboutusparallax.jpg");
+  min-height: 220px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 560, ../sass/styles.scss */
+.aboutcarousel figure {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 564, ../sass/styles.scss */
+.aboutcarousel figure img {
+  width: 100%;
+  height: 278px;
+}
+
+/* line 573, ../sass/styles.scss */
+.contact {
+  padding: 60px 0 60px 0;
+}
+
+/* line 577, ../sass/styles.scss */
+.contactform p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+/* line 583, ../sass/styles.scss */
+.contactform .contactinput {
+  background-color: #E9E9E9;
+  border: none;
+  padding: 10px 9px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #6B6B6B;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 592, ../sass/styles.scss */
+.contactform .btn-contact-submit {
+  background-color: #1FA136;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: none;
+}
+/* line 598, ../sass/styles.scss */
+.contactform .btn-contact-submit:hover {
+  background-color: #1AB736;
+}
+/* line 602, ../sass/styles.scss */
+.contactform .successmessage {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #1FA136;
+}
+/* line 608, ../sass/styles.scss */
+.contactform .failuremessage {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #FF0000;
+}
+
+/* line 617, ../sass/styles.scss */
+.menuparallax {
+  background-image: url("../img/menuparallax.jpg");
+  min-height: 220px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 626, ../sass/styles.scss */
+.menublock {
+  padding-bottom: 40px;
+}
+/* line 628, ../sass/styles.scss */
+.menublock .menuheadtitle {
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #DADADA;
+}
+/* line 631, ../sass/styles.scss */
+.menublock .menuheadtitle h1 {
+  font-family: "Patua One", cursive;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0;
+  text-align: center;
+}
+/* line 640, ../sass/styles.scss */
+.menublock .menuheading {
+  padding: 35px 0 40px 0;
+}
+/* line 642, ../sass/styles.scss */
+.menublock .menuheading h2 {
+  font-family: "Patua One", cursive;
+  font-size: 24px;
+  color: #323232;
+  text-align: center;
+}
+/* line 650, ../sass/styles.scss */
+.menublock ul {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+/* line 656, ../sass/styles.scss */
+.menublock .menulist li {
+  padding: 25px 0 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #DADADA;
+  float: left;
+  width: 49%;
+}
+/* line 662, ../sass/styles.scss */
+.menublock .menulist li:nth-child(2n) {
+  margin-left: 1%;
+}
+/* line 665, ../sass/styles.scss */
+.menublock .menulist li:nth-child(2n+1) {
+  width: 49%;
+  float: left;
+  clear: left;
+  margin-right: 1%;
+}
+/* line 673, ../sass/styles.scss */
+.menublock .menulist .menuinfo h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+}
+/* line 680, ../sass/styles.scss */
+.menublock .menulist .menuinfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #575757;
+  text-align: left;
+}
+/* line 688, ../sass/styles.scss */
+.menublock .menulist .price h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+}
+/* line 696, ../sass/styles.scss */
+.menublock .menulist:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 705, ../sass/styles.scss */
+.time p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #323232;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+/* line 714, ../sass/styles.scss */
+.menuparone {
+  background-image: url("../img/menuparallax1.jpg");
+  min-height: 278px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 723, ../sass/styles.scss */
+.menupartwo {
+  background-image: url("../img/menuparallax2.jpg");
+  min-height: 278px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

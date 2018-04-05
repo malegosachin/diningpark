@@ -1,0 +1,109 @@
+/* Large desktops and laptops */
+@media(max-width: 1366px){
+
+}
+
+@media(max-width: 1360px){
+
+}
+
+@media(max-width: 1280px){
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media(max-width: 1240px){
+
+}
+
+@media(max-width: 1280px){
+
+}
+
+@media(max-width: 1024px){
+
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 736px) {
+
+}
+
+@media (max-width: 732px) {
+
+}
+
+@media screen and (max-width:680px) {
+
+}
+
+@media (max-width: 667px) {
+
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 568px) {
+
+}
+
+@media (max-width: 533px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 414px) {
+
+}
+
+@media (max-width: 412px) {
+
+}
+
+@media (max-width: 384px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

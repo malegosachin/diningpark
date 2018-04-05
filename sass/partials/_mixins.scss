@@ -1,0 +1,28 @@
+@mixin textFont{
+	font-family: $roboto;
+	font-size: $fontSize;
+	color: $textColor;
+}
+
+@mixin homeGalleryTextFont{
+	font-family: $roboto;
+	font-size: $fontSizeHomeGallery;
+	color: $white;
+}
+
+@mixin grid($cols, $mgn){
+	float: left;
+	margin-right: $mgn;
+	margin-bottom: $mgn;
+	width: ((100% - (($cols - 1) * $mgn)) / $cols);
+	&:nth-child(#{$cols}n){
+		margin-right: 0;
+	}
+}
+
+@mixin sectionHeading{
+	font-family: $patua;
+	font-size: $sectionHeading;
+	color: $green;
+	margin: 0;
+}
